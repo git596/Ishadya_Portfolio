@@ -1,0 +1,117 @@
+@import "../../vars.css";
+
+.container {
+    background-color: rgba(12, 12, 12, 0.6);
+    padding: 53px;
+    padding-top: 20px;
+    margin-top: 79px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* width: 100%; */
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 300;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    width: 100%;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 200;
+    font-size: medium;
+    color: #cadef7;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 10px;
+    color: aliceblue;
+    border: 1px solid #4c5452;
+    background-color: rgb(25, 24, 24);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4025ca;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #4e01e7;
+}
+
+.infoContainer {
+    /* margin-top: 0px; */
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    /* align-items:start; */
+
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF; /* White color */
+    font-size: larger;
+}
+
+.icon {
+    color: #cc2160; /* Blue color for icons */
+    font-size: 45px;
+}

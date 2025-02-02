@@ -1,0 +1,76 @@
+[
+      {
+            "title": "Communication Shop Management System",
+            "imageSrcs": [
+                  "src/assets/projects/RasanjanaCom.png",
+                  "src/assets/projects/RasanjanaCom1.png",
+                  "src/assets/projects/RasanjanaCom4.png",
+                  "src/assets/projects/RasanjanaCom3.png",
+                  "src/assets/projects/RasanjanaCom2.png"
+            ],
+            "description": "Web-based management system for Rasanjana Communications, is my individual software development project which was done as a partial fulfilment of my degree programme",
+            "skills": [
+                  "React JS",
+                  "express",
+                  "node JS",
+                  "mySQL",
+                  "Tailwind CSS",
+                  "vite",
+                  "Cloudinary",
+                  "HTML"
+            ],
+            "demo": "https://www.example.com",
+            "source": "https://github.com/git596/My_react_App"
+      },
+      {
+            "title": "Weather Forecasting Mobile App",
+            "imageSrcs": [
+                  "src/assets/projects/WeatherApp.png",
+                  "src/assets/projects/WeatherApp1.png",
+                  "src/assets/projects/WeatherApp2.png"
+            ],
+            "description": "Mobile app to forecast the weather in different cities all around the world with real time updates. App facilitates getting more information like wind peed, humidity and pressure along with hourly forecast.",
+            "skills": [
+                  "Flutter",
+                  "Dart"
+            ],
+            "demo": "https://www.example.com",
+            "source": "https://github.com/git596/WeatherApp"
+      },
+      {
+            "title": "Hospital Meal Management System",
+            "imageSrcs": [
+                  "src/assets/projects/HospitalSystem.png",
+                  "src/assets/projects/HospitalSystem1.png",
+                  "src/assets/projects/HospitalSystem2.png",
+                  "src/assets/projects/HospitalSystem3.png",
+                  "src/assets/projects/HospitalSystem4.png"
+            ],
+            "description": "Mainly contributed as the front-end developer to a group project designing a hospital meal management system",
+            "skills": [
+                  "Java",
+                  "Java Swing",
+                  "MySQL",
+                  "CSS",
+                  "HTML"
+            ],
+            "demo": "https://www.example.com",
+            "source": "https://github.com/git596/HospitalMealManagement-System"
+      },
+      {
+            "title": "Hangman Game",
+            "imageSrcs": [
+                  "src/assets/projects/HangmanGame.png",
+                  "src/assets/projects/HangmanGame1.png",
+                  "src/assets/projects/HangmanGame2.png",
+                  "src/assets/projects/HangmanGame3.png",
+                  "src/assets/projects/HangmanGame4.png"
+            ],
+            "description": "Developed fully-fledged Hangman game",
+            "skills": [
+                  "C++"
+            ],
+            "demo": "https://www.example.com",
+            "source": "https://github.com/hasharas/data-finance"
+      }
+]

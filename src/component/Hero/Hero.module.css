@@ -1,0 +1,129 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(29, 64, 102, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 900px;
+  margin-bottom: 22px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* text-decoration: none; */
+  color: var(--color-text);
+}
+
+.titleSecond {
+  /* display: flex;
+  justify-content: center;
+  text-align: center; */
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 46px;
+  font-weight: 700px;
+  margin-bottom: 20px;
+  font-family: var(--font-roboto);
+}
+
+.description {
+  font-size: 22px;
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 82px;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 19px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.heroImg {
+  width: 25%;
+  /* height: 40%; */
+  z-index: 1;
+
+  /* animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; */
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBluer {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 250px;
+  top: 200px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .content {
+    align-items: center;
+  }
+}

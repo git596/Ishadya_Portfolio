@@ -1,0 +1,86 @@
+[
+      {
+            "title": "HTML",
+            "imageSrc": "src/assets/skills/html.png"
+      },
+      {
+            "title": "CSS",
+            "imageSrc": "src/assets/skills/CSS3.png"
+      },
+      {
+            "title": "C++",
+            "imageSrc": "src/assets/skills/C++.png"
+      },
+      {
+            "title": "Cloudinary",
+            "imageSrc": "src/assets/skills/Cloudinary.png"
+      },
+      {
+            "title": "GitHub",
+            "imageSrc": "src/assets/skills/GitHub.png"
+      },
+      {
+            "title": "Java",
+            "imageSrc": "src/assets/skills/Java.png"
+      },
+      {
+            "title": "JavaScript",
+            "imageSrc": "src/assets/skills/JavaScript.png"
+      },
+      {
+            "title": "MySQL",
+            "imageSrc": "src/assets/skills/MySQL.png"
+      },
+      {
+            "title": "Node",
+            "imageSrc": "src/assets/skills/Node.png"
+      },
+      {
+            "title": "React",
+            "imageSrc": "src/assets/skills/react.png"
+      },
+      {
+            "title": "PostgreSQL",
+            "imageSrc": "src/assets/skills/PostgresSQL.png"
+      },
+      {
+            "title": "Postman",
+            "imageSrc": "src/assets/skills/Postman.png"
+      },
+      {
+            "title": "TailwindCSS",
+            "imageSrc": "src/assets/skills/TailwindCSS.png"
+      },
+      {
+            "title": "TypeScript",
+            "imageSrc": "src/assets/skills/TypeScript.png"
+      },
+      {
+            "title": "VSCode",
+            "imageSrc": "src/assets/skills/VSCode.png"
+      },
+      {
+            "title": "Python",
+            "imageSrc": "src/assets/skills/Python.jpg"
+      },
+      {
+            "title": "Flutter",
+            "imageSrc": "src/assets/skills/Flutter.png"
+      },
+      {
+            "title": "Dart",
+            "imageSrc": "src/assets/skills/Dart.png"
+      },
+      {
+            "title": "Figma",
+            "imageSrc": "src/assets/skills/figma.png"
+      },
+      {
+            "title": "Odoo",
+            "imageSrc": "src/assets/skills/Odoo1.png"
+      },
+      {
+            "title": "Vite",
+            "imageSrc": "src/assets/skills/Vite.png"
+      }
+]
