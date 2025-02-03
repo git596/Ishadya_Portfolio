@@ -11,7 +11,7 @@ import GitHub from '../../assets/skills/GitHub.png';
 import Java from '../../assets/skills/Java.png';
 import JavaScript from '../../assets/skills/JavaScript.png';
 import MySQL from '../../assets/skills/MySQL.png';
-import Node from '../../assets/skills/Node.png';
+import Node from '../../assets/skills/node.png';
 import ReactJS from '../../assets/skills/react.png';
 import PostgreSQL from '../../assets/skills/PostgresSQL.png';
 import Postman from '../../assets/skills/Postman.png';
