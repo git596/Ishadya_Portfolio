@@ -1,86 +1,65 @@
 [
       {
-            "title": "HTML",
-            "imageSrc": "src/assets/skills/html.png"
+            "title": "HTML"
       },
       {
-            "title": "CSS",
-            "imageSrc": "src/assets/skills/CSS3.png"
+            "title": "CSS"
       },
       {
-            "title": "C++",
-            "imageSrc": "src/assets/skills/C++.png"
+            "title": "C++"
       },
       {
-            "title": "Cloudinary",
-            "imageSrc": "src/assets/skills/Cloudinary.png"
+            "title": "Cloudinary"
       },
       {
-            "title": "GitHub",
-            "imageSrc": "src/assets/skills/GitHub.png"
+            "title": "GitHub"
       },
       {
-            "title": "Java",
-            "imageSrc": "src/assets/skills/Java.png"
+            "title": "Java"
       },
       {
-            "title": "JavaScript",
-            "imageSrc": "src/assets/skills/JavaScript.png"
+            "title": "JavaScript"
       },
       {
-            "title": "MySQL",
-            "imageSrc": "src/assets/skills/MySQL.png"
+            "title": "MySQL"
       },
       {
-            "title": "Node",
-            "imageSrc": "src/assets/skills/Node.png"
+            "title": "Node"
       },
       {
-            "title": "React",
-            "imageSrc": "src/assets/skills/react.png"
+            "title": "React"
       },
       {
-            "title": "PostgreSQL",
-            "imageSrc": "src/assets/skills/PostgresSQL.png"
+            "title": "PostgreSQL"
       },
       {
-            "title": "Postman",
-            "imageSrc": "src/assets/skills/Postman.png"
+            "title": "Postman"
       },
       {
-            "title": "TailwindCSS",
-            "imageSrc": "src/assets/skills/TailwindCSS.png"
+            "title": "TailwindCSS"
       },
       {
-            "title": "TypeScript",
-            "imageSrc": "src/assets/skills/TypeScript.png"
+            "title": "TypeScript"
       },
       {
-            "title": "VSCode",
-            "imageSrc": "src/assets/skills/VSCode.png"
+            "title": "VSCode"
       },
       {
-            "title": "Python",
-            "imageSrc": "src/assets/skills/Python.jpg"
+            "title": "Python"
       },
       {
-            "title": "Flutter",
-            "imageSrc": "src/assets/skills/Flutter.png"
+            "title": "Flutter"
       },
       {
-            "title": "Dart",
-            "imageSrc": "src/assets/skills/Dart.png"
+            "title": "Dart"
       },
       {
-            "title": "Figma",
-            "imageSrc": "src/assets/skills/figma.png"
+            "title": "Figma"
       },
       {
-            "title": "Odoo",
-            "imageSrc": "src/assets/skills/Odoo1.png"
+            "title": "Odoo"
       },
       {
-            "title": "Vite",
-            "imageSrc": "src/assets/skills/Vite.png"
+            "title": "Vite"
       }
 ]
