@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 import style from './GetInTouch.module.css';
-import { HiOutlineMail } from "react-icons/hi";
-import { BsTelephone } from "react-icons/bs";
-import { TiHomeOutline } from "react-icons/ti";
-import { TbBrandWhatsapp } from "react-icons/tb";
-import { TbBrandLinkedin } from "react-icons/tb";
-import { VscGithub } from "react-icons/vsc";
 import { FaHandPointLeft } from "react-icons/fa";
 
 const GetInTouch = () => {
@@ -127,26 +121,6 @@ const GetInTouch = () => {
                                                     <div style={{color: '#dcb732', fontSize: '3.8rem', textAlign: 'center', justifyContent: 'center'}}>
                                                         <FaHandPointLeft/>
                                                     </div>
-                                                {/* <div className={style.infoItem}>
-                                                        <BsTelephone className={style.icon} />
-                                                        <span>+94 71634101&nbsp;&nbsp;/&nbsp;&nbsp;+94 713753456</span>
-                                                    </div>
-                                                    <div className={style.infoItem}>
-                                                        <TbBrandWhatsapp className={style.icon} />
-                                                        <a style={{color: 'white'}} href="https://wa.me/9471634101" target="_blank" rel="noopener noreferrer">+94 71634101</a>
-                                                    </div>
-                                                    <div className={style.infoItem}>
-                                                        <HiOutlineMail className={style.icon} />
-                                                        <a style={{color: 'white'}} href="mailto:ishadyaap@gmail.com">ishadyaap@gmail.com</a>
-                                                    </div>
-                                                    <div className={style.infoItem}>
-                                                        <TbBrandLinkedin className={style.icon} />
-                                                        <a style={{color: 'white'}} href="https://bit.ly/43gbxAv" target="_blank" rel="noopener noreferrer">https://bit.ly/43gbxAv</a>
-                                                    </div>
-                                                    <div className={style.infoItem}>
-                                                        <VscGithub className={style.icon} />
-                                                        <a style={{color: 'white'}} href="https://github.com/git596" target="_blank" rel="noopener noreferrer">https://github.com/git596</a>
-                                                    </div> */}
                             </div>
                         </div>
                 </form>

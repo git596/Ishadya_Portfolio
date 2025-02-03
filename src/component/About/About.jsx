@@ -1,9 +1,6 @@
 import React from 'react';
 import style from './About.module.css';
 import men2 from "../../assets/about/Damindu.png";
-import cursorIcon from "../../assets/about/cursorIcon.png";
-import serverIcon from "../../assets/about/serverIcon.png";
-import dbIcon from "../../assets/about/uiIcon.png";
 import { FaUserGraduate } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
 

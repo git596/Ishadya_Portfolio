@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import style from "./Navbar.module.css";
-// import { getImageUrl } from "../../utils";
 import menuIcon from "../../assets/nav/menuIcon.png";
 import closeIcon from "../../assets/nav/closeIcon.png"
 
