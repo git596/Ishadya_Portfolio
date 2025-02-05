@@ -30,40 +30,48 @@ const imageMap = {
       "Hangman Game": [HangmanGame, HangmanGame1, HangmanGame2, HangmanGame3, HangmanGame4]
 };
 
-const ProjectCart = (
-      {
-            project: { title, skills, description, demo, source },
-      }
-) => {
+const ProjectCart = ({ project: { title, skills, description, source } }) => {
       const imageSrcs = imageMap[title] || [];
 
       return (
             <div className={style.container}>
-                  <div style={{ position: "relative", marginRight: "4rem", width: "390px" }}>
-                        <Carousel showThumbs={false} showIndicators={false} infiniteLoop useKeyboardArrows autoPlay>
+                  <div className={style.carouselContainer}>
+                        <Carousel 
+                              showThumbs={false} 
+                              showIndicators={false} 
+                              infiniteLoop 
+                              useKeyboardArrows 
+                              autoPlay
+                              interval={3000}
+                              stopOnHover
+                              swipeable
+                              emulateTouch
+                        >
                               {imageSrcs.map((src, index) => (
                                     <div key={index}>
-                                          <img src={src} alt={`Image ${index + 1 } of ${title}`} className={style.image} />
+                                          <img 
+                                                src={src} 
+                                                alt={`${title} - Image ${index + 1}`} 
+                                                className={style.image}
+                                          />
                                     </div>
                               ))}
-                              {/* <img src={imageSrc}
-                                    alt={`Image of ${title}`}
-                                    className={style.image} /> */}
                         </Carousel>
-                        
                   </div>
                   <div className={style.content}>
                         <h3 className={style.title}>{title}</h3>
                         <p className={style.description}>{description}</p>
                         <ul className={style.skills}>
                               {skills.map((skill, id) => (
-                                    <li key={id} className={style.skill}>{skill}</li>
-
+                                    <li key={id} className={style.skill}>
+                                          {skill}
+                                    </li>
                               ))}
                         </ul>
                         <div className={style.links}>
-                              <a href={demo} className={style.link}>Demo</a>
-                              <a href={source} className={style.link}>Source</a>
+                              <a href={source} className={style.link} target="_blank" rel="noopener noreferrer">
+                                    Source
+                              </a>
                         </div>
                   </div>
             </div>

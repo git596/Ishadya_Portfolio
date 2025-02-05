@@ -5,76 +5,205 @@
   flex-direction: row;
   border-radius: 10px;
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 1 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  max-width: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  width: 100%;
+  transition: background 0.3s ease;
 }
+
+.container:hover {
+  background: linear-gradient(180deg, #132a53 0%, #576cbc 100%);
+}
+
+.carouselContainer {
+  position: relative;
+  width: 390px;
+  min-width: 390px;
+  margin-right: 2rem;
+}
+
 .image {
-  margin-bottom: 12px;
   border-radius: 10px;
-  width: 360px;
+  width: 100%;
   height: 260px;
+  object-fit: cover;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  color: var(--color-text);
-  z-index: 1;
-  margin-left: 20px;
-  width: 900px;
+  flex: 1;
+  gap: 15px;
 }
 
 .title {
   font-size: 25px;
-  font-weight: 700px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(16, 198, 192);
 }
+
 .description {
-  margin-top: 6px;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.5;
 }
+
 .skills {
-  width: 100%;
-  height: 80px;
-  margin-top: 14px;
-  margin-bottom: 14px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;
   list-style: none;
+  margin: 14px 0;
 }
 
 .skill {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  height: 40px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background-color: rgb(16, 198, 192);
+  color: #132a53;
+  transform: translateY(-2px);
 }
 
 .links {
-  width: 100%;
-  padding-top: 48px;
   display: flex;
   gap: 20px;
-  /* justify-content: space-around; */
+  margin-top: auto;
+  padding-top: 20px;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 25px;
-  font-weight: 300;
-  font-family:serif;
+  font-size: 18px;
+  font-weight: 500;
   border-radius: 100px;
   background: var(--color-primary);
-  padding: 1px 22px;
+  padding: 8px 24px;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  background-color: #1482d1;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1690px) {
+  .container {
+    padding: 20px;
+  }
+
+  .carouselContainer {
+    width: 340px;
+    min-width: 340px;
+    margin-right: 1.5rem;
+  }
+
+  .image {
+    height: 230px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .skill {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 6px 12px;
+  }
+
+  .skills {
+    margin: 4px 0;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .link {
+    font-size: 16px;
+    padding: 4px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .carouselContainer {
+    width: 100%;
+    min-width: unset;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .skills {
+    margin: 10px 0;
+  }
+
+  .skill {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  .link {
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 12px;
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .skills {
+    gap: 8px;
+  }
+
+  .skill {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .links {
+    padding-top: 15px;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 5px 16px;
+  }
 }

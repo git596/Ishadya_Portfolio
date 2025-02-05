@@ -26,58 +26,55 @@ import Odoo from '../../assets/skills/Odoo1.png';
 import Vite from '../../assets/skills/Vite.png';
 
 const imageMap = {
-      "HTML": HTML,
-      "CSS": CSS,
-      "C++": CPlusPlus,
-      "Cloudinary": Cloudinary,
-      "GitHub": GitHub,
-      "Java": Java,
-      "JavaScript": JavaScript,
-      "MySQL": MySQL,
-      "Node": Node,
-      "React": ReactJS,
-      "PostgreSQL": PostgreSQL,
-      "Postman": Postman,
-      "TailwindCSS": TailwindCSS,
-      "TypeScript": TypeScript,
-      "VSCode": VSCode,
-      "Python": Python,
-      "Flutter": Flutter,
-      "Dart": Dart,
-      "Figma": Figma,
-      "Odoo": Odoo,
-      "Vite": Vite
+    HTML,
+    CSS,
+    "C++": CPlusPlus,
+    Cloudinary,
+    GitHub,
+    Java,
+    JavaScript,
+    MySQL,
+    Node,
+    React: ReactJS,
+    PostgreSQL,
+    Postman,
+    TailwindCSS,
+    TypeScript,
+    VSCode,
+    Python,
+    Flutter,
+    Dart,
+    Figma,
+    Odoo,
+    Vite
 };
 
 const Experience = () => {
-      return (
-            <section id="skills" className={style.container} >
-
-                  <h2 className={style.title}>
-                        Technical Skills
-                  </h2>
-                  <div className={style.content}>
-                        <div className={style.skills}>
-                              {skills.map((skill, id) => {
-                                    return (
-                                          <div key={id} className={style.skill}>
-                                                <div className={style.skillImageContainer}>
-                                                      <img src={imageMap[skill.title]}
-                                                            alt={skill.title}
-                                                            className={style.skillImage} />
-                                                </div>
-                                                <div className={style.skillTitlediv}>
-                                                      <p className={style.skillTitle}>{skill.title}</p>
-                                                </div>
-                                          </div>
-
-                                    )
-                              })}
+    return (
+        <section id="skills" className={style.container}>
+            <h2 className={style.title}>
+                Technical Skills
+            </h2>
+            <div className={style.content}>
+                <div className={style.skills}>
+                    {skills.map((skill, id) => (
+                        <div key={id} className={style.skill}>
+                            <div className={style.skillImageContainer}>
+                                <img 
+                                    src={imageMap[skill.title]}
+                                    alt={skill.title}
+                                    className={style.skillImage}
+                                />
+                            </div>
+                            <div className={style.skillTitlediv}>
+                                <p className={style.skillTitle}>{skill.title}</p>
+                            </div>
                         </div>
-                  </div>
-            </section>
-
-      );
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }
 
 export default Experience;

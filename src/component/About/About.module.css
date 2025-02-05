@@ -7,28 +7,30 @@
   padding: 53px;
   margin-top: 129px;
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .title {
-  /* color: var(--color-text); */
-  color: aqua;
+  color: #8096ed;
   font-size: 35px;
-  font-weight: 700;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  letter-spacing: 0.6rem;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.3rem;
   text-align: center;
-
 }
+
 .content {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 40px;
+  margin-top: 40px;
 }
+
 .aboutImg {
   width: 30%;
+  height: auto;
 }
 
 .aboutItems {
@@ -36,6 +38,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  width: 70%;
 }
 
 .aboutItem {
@@ -45,7 +48,6 @@
   border-radius: 20px;
   list-style: none;
   padding: 5px;
-  /* padding-bottom: 10px; */
   background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
@@ -55,62 +57,102 @@
   background-repeat: no-repeat;
   transition: 0.4s;
 }
+
 .aboutItem:hover {
   background-size: 100% 100%;
 }
 
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.aboutItem p {
-  font-size: 20px;
-  width: 100%;
-}
 .aboutItemText {
   padding: 10px;
+  width: 100%;
 }
 
 .aboutItemText h2 {
   font-size: 25px;
   font-weight: 600;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-bottom: 15px;
+}
+
+.aboutItemText h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1f63cb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #1f63cb;
+  margin-top: 3px;
+}
+
+.externalLink {
+  padding-left: 15px;
+  color: #1f63cb;
+}
+
+.aboutItemText p {
+  font-size: 20px;
+  width: 100%;
 }
 
 .aboutItemText a {
   text-decoration: none;
   color: var(--color-text);
   font-size: 18px;
-  text-align:justify;
+  text-align: justify;
 }
 
 .aboutItemText p a {
-  text-decoration: none;
-  color: var(--color-text);
   font-size: 15px;
-  text-align:justify;
 }
 
 .columnItems {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 52px;
   flex-direction: row;
-  gap: 10px;
   max-height: 100%;
+}
+
+@media screen and (max-width: 1690px) {
+  .container {
+    padding: 40px;
+    margin-top: 100px;
+  }
+
+  .columnItems {
+    gap: 12px;
+  }
+
+  .aboutItemText h2,
+  .aboutItemText h3 {
+    font-size: 22px;
+  }
+
+  .aboutItemText p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 830px) {
   .container {
     background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 30px 20px;
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 30px;
   }
 
   .content {
     flex-direction: column;
+    gap: 30px;
   }
 
   .aboutImg {
@@ -118,11 +160,55 @@
   }
 
   .aboutItems {
-    margin-top: 29px;
+    width: 100%;
+    margin-top: 20px;
+    gap: 40px;
+  }
+
+  .columnItems {
+    flex-direction: column;
+    gap: 40px;
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+    margin-top: 10px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    letter-spacing: 0.2rem;
+  }
+
+  .aboutItemText h2,
+  .aboutItemText h3 {
+    font-size: 20px;
+  }
+
+  .aboutItemText p {
+    font-size: 16px;
+  }
+
+  .aboutItemText a {
+    font-size: 17px;
+    text-align: justify;
+  }
+
+  .aboutItems {
+    gap: 30px;
+  }
+
+  .columnItems {
+    gap: 30px;
   }
 }

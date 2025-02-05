@@ -1,8 +1,9 @@
 import React from 'react';
 import style from './About.module.css';
 import men2 from "../../assets/about/Damindu.png";
-import { FaUserGraduate } from "react-icons/fa";
+import { FaUserGraduate, FaExternalLinkAlt } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 const About = () => {
       return (
@@ -14,7 +15,6 @@ const About = () => {
                         <img src={men2} alt="lap with me" className={style.aboutImg} />
                         <ul className={style.aboutItems}>
                               <li className={style.aboutItem}>
-                                    {/* <img src={cursorIcon} alt="cursor image" /> */}
                                     <div className={style.aboutItemText}>
                                           <h2>I'm Ishadya Abeysinghe</h2>
                                           <a>
@@ -24,10 +24,14 @@ const About = () => {
                               </li>
                               <div className={style.columnItems}>
                                     <li className={style.aboutItem}>
-                                          {/* <img src={dbIcon} alt="database image" /> */}
                                           <div className={style.aboutItemText}>
-                                                <h3><span style={{ marginRight: '18px', color: 'cyan' }}><FaUserGraduate /></span>Education</h3>
+                                                <h3>
+                                                      <FaUserGraduate className={style.icon} />
+                                                      Education
+                                                </h3>
                                                 <p>
+                                                      Undergraduate
+                                                      <br />
                                                       B.Sc. (Hons) in Information Technology
                                                       <br />
                                                       University of Kelaniya
@@ -37,16 +41,36 @@ const About = () => {
                                           </div>
                                     </li>
                                     <li className={style.aboutItem}>
-                                          {/* <img src={dbIcon} alt="database image" /> */}
                                           <div className={style.aboutItemText}>
-                                                <h3><span style={{ marginRight: '18px', color: 'cyan' }}><IoHome /></span>Address</h3>
+                                                <h3>
+                                                      <BsPersonWorkspace className={style.icon} />
+                                                      Work Experience
+                                                </h3>
+                                                <p>
+                                                      Software Engineer Intern
+                                                      <br />
+                                                      MYNDi Labs (Pvt.) Ltd
+                                                      <a href='https://www.myndinnovation.com' className={style.externalLink}>
+                                                            <FaExternalLinkAlt />
+                                                      </a>
+                                                      <br />
+                                                      Sri Lanka
+                                                      <br />
+                                                      <a>2023 - 2024</a>
+                                                </p>
+                                          </div>
+                                    </li>
+                                    <li className={style.aboutItem}>
+                                          <div className={style.aboutItemText}>
+                                                <h3>
+                                                      <IoHome className={style.icon} />
+                                                      Address
+                                                </h3>
                                                 <p>
                                                       No 62, N.H.S Wewalduwa,
                                                       Kelaniya
                                                       <br />
                                                       Sri Lanka
-                                                      <br />
-                                                      {/* <a>2022 - Present</a> */}
                                                 </p>
                                           </div>
                                     </li>

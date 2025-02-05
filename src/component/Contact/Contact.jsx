@@ -1,9 +1,31 @@
 import React from 'react';
 import style from "./Contact.module.css"
 import { HiOutlineMail } from "react-icons/hi";
-import { TbBrandWhatsapp } from "react-icons/tb";
-import { TbBrandLinkedin } from "react-icons/tb";
+import { TbBrandWhatsapp, TbBrandLinkedin } from "react-icons/tb";
 import { VscGithub } from "react-icons/vsc";
+
+const socialLinks = [
+    {
+        icon: HiOutlineMail,
+        href: "mailto:ishadyaap@gmail.com",
+        ariaLabel: "Email"
+    },
+    {
+        icon: TbBrandWhatsapp,
+        href: "https://wa.me/9471634101",
+        ariaLabel: "WhatsApp"
+    },
+    {
+        icon: TbBrandLinkedin,
+        href: "https://bit.ly/43gbxAv",
+        ariaLabel: "LinkedIn"
+    },
+    {
+        icon: VscGithub,
+        href: "https://github.com/git596",
+        ariaLabel: "GitHub"
+    }
+];
 
 const Contact = () => {
       return (
@@ -12,20 +34,26 @@ const Contact = () => {
                         {/* <h2 >
                               Contact
                         </h2> */}
-                        <div className={style.icons} style={{display: 'flex', flexDirection: 'row', gap: '15px', justifyContent: 'center', marginBottom: '20px'}}>
-                              {/* <a style={{color: 'white'}} href="mailto:ishadyaap@gmail.com">ishadyaap@gmail.com</a>
-                               */}
-                              <a href="mailto:ishadyaap@gmail.com" style={{backgroundColor: 'GrayText', borderRadius: '100%', width: '55px', fontSize: '40px'}}><HiOutlineMail style={{paddingTop: '10px', color: '#76badc'}}/></a>
-                              <a href="https://wa.me/9471634101"style={{backgroundColor: 'GrayText', borderRadius: '100%', width: '55px', fontSize: '40px'}}><TbBrandWhatsapp style={{paddingTop: '10px', color: '#76badc'}}/></a>
-                              <a href="https://bit.ly/43gbxAv" style={{backgroundColor: 'GrayText', borderRadius: '100%', width: '55px', fontSize: '40px'}}><TbBrandLinkedin style={{paddingTop: '10px', color: '#76badc'}}/></a>
-                              <a href="https://github.com/git596" style={{backgroundColor: 'GrayText', borderRadius: '100%', width: '55px', fontSize: '40px'}}><VscGithub style={{paddingTop: '10px', color: '#76badc'}}/></a>
+                        <div className={style.socialIcons}>
+                              {socialLinks.map((link, index) => (
+                                    <a 
+                                          key={index}
+                                          href={link.href}
+                                          className={style.socialLink}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          aria-label={link.ariaLabel}
+                                    >
+                                          <link.icon className={style.socialIcon} />
+                                    </a>
+                              ))}
                         </div>
-                              <div style={{justifyContent: 'center', display: 'flex', marginBottom: '20px'}}>
+                              <div className={style.separatorContainer}>
                                     <hr className={style.separator} />
                               </div>
-                        <p>
-                        Copyright © 2025, All Rights Reserved.<br/>
-                        Designed By A P D Ishadya
+                        <p className={style.copyright}>
+                        © {new Date().getFullYear()} Ishadya. All Rights Reserved.<br/>
+                        Designed and Developed by A P D Ishadya
                         </p>
                   </div>
                   <ul className={style.links}>

@@ -12,22 +12,20 @@
                   "Cloudinary",
                   "HTML"
             ],
-            "demo": "https://www.example.com",
             "source": "https://github.com/git596/My_react_App"
       },
       {
             "title": "Weather Forecasting Mobile App",
-            "description": "Mobile app to forecast the weather in different cities all around the world with real time updates. App facilitates getting more information like wind peed, humidity and pressure along with hourly forecast.",
+            "description": "Mobile app to forecast the weather in different cities all around the world with real time updates. App facilitates getting more information like wind peed, humidity and pressure along with hourly forecast",
             "skills": [
                   "Flutter",
                   "Dart"
             ],
-            "demo": "https://www.example.com",
             "source": "https://github.com/git596/WeatherApp"
       },
       {
             "title": "Hospital Meal Management System",
-            "description": "Mainly contributed as the front-end developer to a group project designing a hospital meal management system",
+            "description": "Mainly contributed as the front-end developer to the group project, hospital meal management system which involves streamlining the process of managing meals of patients in a hospital",
             "skills": [
                   "Java",
                   "Java Swing",
@@ -35,16 +33,14 @@
                   "CSS",
                   "HTML"
             ],
-            "demo": "https://www.example.com",
             "source": "https://github.com/git596/HospitalMealManagement-System"
       },
       {
             "title": "Hangman Game",
-            "description": "Developed fully-fledged Hangman game",
+            "description": "Simple C++ program for fully-fledged, single-player Hangman game",
             "skills": [
                   "C++"
             ],
-            "demo": "https://www.example.com",
-            "source": "https://github.com/hasharas/data-finance"
+            "source": "https://github.com/git596/HangManGame"
       }
 ]

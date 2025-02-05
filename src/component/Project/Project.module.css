@@ -4,29 +4,73 @@
   margin-top: 76px;
   color: var(--color-text);
   background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
   padding: 53px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .title {
-  color: aqua;
+  color: #8096ed;
   font-size: 35px;
-  font-weight: 700;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  letter-spacing: 0.6rem;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.3rem;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .projects {
   margin-top: 37px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: start;
-  justify-content: center;
-  gap: 15px;
+  gap: 30px;
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px;
+    margin-top: 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .projects {
+    margin-top: 25px;
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .title {
+    font-size: 24px;
+    letter-spacing: 0.2rem;
+  }
+
+  .projects {
+    margin-top: 20px;
+    gap: 20px;
+  }
 }
